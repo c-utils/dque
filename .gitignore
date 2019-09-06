@@ -1,3 +1,8 @@
+*~
+src/bak*/
+src/*.txt
+doc/
+
 # Prerequisites
 *.d
 
