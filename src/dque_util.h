@@ -167,7 +167,7 @@ extern int         dque_pri_size(   dque_pri_qhead  *pri                 );
     #define INSERT_DEF          DQUE_LIB
     #endif
 
-    #if INSERT_DEF == DQUE
+    #if INSERT_DEF == DQUE_LIB
       #define my_begin(a)       dque_my_begin(a)
       #define my_next(a,b)      dque_my_next(a,b)
       #define my_end(a)         dque_my_end(a)
@@ -196,7 +196,7 @@ extern int         dque_pri_size(   dque_pri_qhead  *pri                 );
       #define pri_top(a)        dque_pri_top(a)
       #define pri_empty(a)      dque_pri_empty(a)
       #define pri_size(a)       dque_pri_size(a)
-    #endif                                  /* INSERT_DEF == DQUE           */
+    #endif                                  /* INSERT_DEF == DQUE_LIB       */
 #endif                                      /* ifndef __STDC_VERSION__      */
 
 #endif /* DQUE_UTIL_H */

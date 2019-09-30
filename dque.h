@@ -291,7 +291,7 @@ extern dque_err dque_push_front(dque_qhead *,  void *                          )
     #define INSERT_DEF          DQUE_LIB
     #endif
 
-    #if INSERT_DEF == DQUE
+    #if INSERT_DEF == DQUE_LIB
       /* member functions */
       #define create(a,b,c)       dque_create(a,b,c)
       #define destroy(a)          dque_destroy(a)
@@ -332,7 +332,7 @@ extern dque_err dque_push_front(dque_qhead *,  void *                          )
         #define delete(a,b,c)       dque_erase(a,b,c)
         #define key_delete(a,b,c,d) dque_key_erase(a,b,c,d)
       #endif                                /* __cplusplus                  */
-    #endif                                  /* INSERT_DEF == DQUE           */
+    #endif                                  /* INSERT_DEF == DQUE_LIB       */
 #endif                                      /* ifndef __STDC_VERSION__      */
 
 #ifdef __cplusplus
